@@ -1,3 +1,3 @@
 import bar from './module';
 
-bar();
+document.write(bar());

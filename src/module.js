@@ -1,3 +1,5 @@
 export default function bar() {
-    console.log(`Webpack is working!`);
+    let message = 'Webpack is working!';
+    console.log(`${message}`);
+    return message;
 }
