@@ -20,18 +20,24 @@ module.exports = {
      * New webpack
      * see https://webpack.js.org/loaders/babel-loader/
      */
-    module: {
+    // module: {
+    //     rules: [
+    //       {
+    //         test: /\.m?js$/,
+    //         exclude: /(node_modules|bower_components)/,
+    //         use: {
+    //           loader: 'babel-loader',
+    //           options: {
+    //             presets: ['@babel/preset-env']
+    //           }
+    //         }
+    //       }
+    //     ]
+    //   }
+
+      module: {
         rules: [
-          {
-            test: /\.m?js$/,
-            exclude: /(node_modules|bower_components)/,
-            use: {
-              loader: 'babel-loader',
-              options: {
-                presets: ['@babel/preset-env']
-              }
-            }
-          }
+          { test: /\.txt$/, use: 'babel-loader' }
         ]
       }
       
