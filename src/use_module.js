@@ -1,3 +1,3 @@
-import bar from './module';
+import Bar from './module';
 
-document.write(bar());
+document.write(new Bar().show());
