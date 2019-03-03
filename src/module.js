@@ -18,8 +18,11 @@
 //     }
 // }
 
-export default function bar() {
-    let message = 'Webpack working!';
-    console.log('Webpack working!');
-    return message;
-}
+/**
+ * babel not babel-loader
+ */
+ export default function bar() {
+     let message = 'Webpack working!';
+     console.log('Webpack working!');
+     return message;
+    }

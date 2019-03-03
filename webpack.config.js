@@ -37,7 +37,7 @@ module.exports = {
 
       module: {
         rules: [
-          { test: /\.txt$/, use: 'babel-loader' }
+          { test: /\.js$/, use: 'babel-loader' }
         ]
       }
       
