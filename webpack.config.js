@@ -58,7 +58,7 @@ module.exports = {
         // options: { preset: ['env'] }
 
       },
-      // { test: /\.js$/, use: 'babel-loader' },
+      { test: /\.css$/, use: 'css-loader' },
       // { test: /\.jsx$/, use: 'babel-loader' }
     ]
   },
