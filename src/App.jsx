@@ -1,10 +1,12 @@
 import React, { Component, Fragment } from 'react';
+import Home from './components/Home';
 
 class App extends Component {
   render() {
     return (
       <Fragment>
-        <p>This is an incredibly complex react app!</p>
+        <p>React with babel and webpack</p>
+        <Home />
       </Fragment>
     );
   }

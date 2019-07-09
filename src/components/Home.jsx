@@ -1,12 +1,9 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 export default function Home() {
   return (
     <div>
-      <h3>React</h3>
+      <h3>Home</h3>
     </div>
   )
 }
-
-ReactDOM.render(<Home />, root)
