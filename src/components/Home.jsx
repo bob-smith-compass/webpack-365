@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 
 export default function Home() {
   return (
@@ -7,3 +8,5 @@ export default function Home() {
     </div>
   )
 }
+
+ReactDOM.render(<Home />, root)

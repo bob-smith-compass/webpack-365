@@ -23,7 +23,7 @@
  */
  export default function bar() {
      let message = 'Webpack working!';
-     debugger;
+    //  debugger;
      console.log('Webpack working!');
      return message;
     }
