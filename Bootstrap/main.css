@@ -4,6 +4,7 @@
     margin: 20px 10px;
     color: white;
     display: inline-block;
+    border: solid 1px gray;
 }
 #red {
     background-color: red;
