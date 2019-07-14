@@ -11,11 +11,25 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./main.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <!-- jQuery UI requires jQuery-->
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"
+        integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk=" crossorigin="anonymous"></script>
+    <!-- jQuery UI -->
     <title>Containers and rows</title>
 </head>
 
 <body>
 
+    <details>
+        <summary>Links | jQuery UI</summary>
+        <a href="https://jqueryui.com/">https://jqueryui.com/</a>
+    <a href="https://www.pexels.com/search/online/">Online Images</a>
+
+    </details>
 
 
     <!-- React js code injected point -->
@@ -47,8 +61,11 @@
         </div>
         <div class="col-8">
             <div class="nav-content">
-                <div role="tabpanel" id="list-c1" class="tab-pane fade">First Content</div>
-                <div role="tabpanel" id="list-c2" class="tab-pane fade">Second Content</div>
+                <!-- <div role="tabpanel" id="list-c1" class="tab-pane fade">Couple</div> -->
+                <div role="tabpanel" id="list-c2" class="tab-pane fade">
+                    Second Content
+                    <!-- <img src="./imgs/computer.jpeg" alt=""> -->
+                </div>
             </div>
         </div>
     </div>
@@ -56,14 +73,16 @@
     <div class="row mt-5">
         <div class="col-3">
             <div class="list-group mb-5" id="list-tab">
-                <a class="list-group-item list-group-item-action" href="#list-c1" data-toggle="list">Link First</a>
+                <a class="list-group-item list-group-item-action" href="#list-c1" data-toggle="list">Couple</a>
                 <a class="list-group-item list-group-item-action" href="#list-c2" data-toggle="list">Link Second</a>
                 <a class="list-group-item list-group-item-action" href="#list-c2" data-toggle="list">Link Third</a>
                 <a class="list-group-item list-group-item-action" href="#list-c2" data-toggle="list">Link Fourth</a>
             </div>
             <div class="col-7">
                 <div class="tab-content" id="nav-tabContent">
-                    <div role="tabpanel" id="list-c1" class="tab-pane fade">First Content</div>
+                    <div role="tabpanel" id="list-c1" class="tab-pane fade">
+                        <img src="https://images.pexels.com/photos/853151/pexels-photo-853151.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200&w=400" alt="Couple">
+                    </div>
                     <div role="tabpanel" id="list-c2" class="tab-pane fade">Second Content</div>
                     <div role="tabpanel" id="list-c3" class="tab-pane fade">Third Content</div>
                     <div role="tabpanel" id="list-c4" class="tab-pane fade">Fourth Content</div>
@@ -71,12 +90,36 @@
             </div>
         </div>
     </div>
+    <div class="ui-widget">
+        <input type="text" id="search">
+    </div>
+
+
+    <div class="ui-widget">
+        <label for="tags">Tags: </label>
+        <input id="tags">
+      </div>
+    <script>
+
+  $( function() {
+    var availableTags = [
+      "One",
+      "Two",
+      "Three"
+    ];
+        $('#search').autocomplete({
+            // source: "https://restcountries.eu/rest/v2/all"
+            source: availableTags
+        })
+    </script>
 
 
 
 
 
-
+    <hr>
+    // Autocomplete
+    // Autocomplete
 
 
 

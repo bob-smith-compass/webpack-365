@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- html imports -->
+    <link rel="import" href="importme.html" id="importme">
+    <!-- html imports -->
+    <!-- Component - Module JS -->
+    <script src="./component.js"></script>
+    <!-- Component - Module JS -->
+    <title>Web Components</title>
+</head>
+<body>
+
+    <a href="https://app.pluralsight.com/player?course=vanilla-web-components-practical-guide&author=leon-revill&name=vanilla-web-components-practical-guide-m1&clip=7&mode=live">html imports</a>
+
+
+    <my-component></my-component>
+    <my-component></my-component>
+    <my-component></my-component>
+
+    <button onclick="showImport()">Show import</button>
+    <script>
+        function showImport() {
+            $link = document.getElementById(importme);
+            const content = $link.import.querySelector('#template');
+            // IMPORT
+            // IMPORT
+            document.body.appendChild(content.cloneNode(true));
+        }
+    </script>
+    
+</body>
+</html>

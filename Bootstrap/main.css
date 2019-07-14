@@ -8,6 +8,10 @@
     background: url('./imgs/borsh.jpeg') no-repeat center center;
     background-size: cover;
 }
+summary:focus {
+    outline: none;
+    background-color: antiquewhite;
+}
 #red {
     background-color: red;
 }
